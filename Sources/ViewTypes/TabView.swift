@@ -69,6 +69,7 @@ extension iOSViewVersion<TabViewType, UITabBarController> {
     public static let v16 = Self(for: .v16, selector: selector)
     public static let v17 = Self(for: .v17, selector: selector)
     public static let v18 = Self(for: .v18, selector: selector)
+    public static let v26 = Self(for: .v26, selector: selector)
 
     @MainActor
     private static var selector: IntrospectionSelector<UITabBarController> {

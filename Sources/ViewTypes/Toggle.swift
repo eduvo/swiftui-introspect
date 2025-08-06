@@ -55,6 +55,7 @@ extension iOSViewVersion<ToggleType, UISwitch> {
     public static let v16 = Self(for: .v16)
     public static let v17 = Self(for: .v17)
     public static let v18 = Self(for: .v18)
+    public static let v26 = Self(for: .v26)
 }
 #elseif canImport(AppKit)
 extension macOSViewVersion<ToggleType, NSButton> {

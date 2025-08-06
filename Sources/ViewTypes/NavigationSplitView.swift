@@ -88,6 +88,7 @@ extension iOSViewVersion<NavigationSplitViewType, UISplitViewController> {
     public static let v16 = Self(for: .v16, selector: selector)
     public static let v17 = Self(for: .v17, selector: selector)
     public static let v18 = Self(for: .v18, selector: selector)
+    public static let v26 = Self(for: .v26, selector: selector)
 
     private static var selector: IntrospectionSelector<UISplitViewController> {
         .default.withAncestorSelector { $0.splitViewController }
