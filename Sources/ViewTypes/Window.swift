@@ -68,6 +68,7 @@ extension iOSViewVersion<WindowType, UIWindow> {
     public static let v16 = Self(for: .v16, selector: selector)
     public static let v17 = Self(for: .v17, selector: selector)
     public static let v18 = Self(for: .v18, selector: selector)
+    public static let v26 = Self(for: .v26, selector: selector)
 
     private static var selector: IntrospectionSelector<UIWindow> {
         .from(UIView.self, selector: { $0.window })

@@ -122,6 +122,22 @@ extension iOSVersion {
         return nil
         #endif
     }
+
+    public static let v26 = iOSVersion {
+        #if os(iOS)
+        if #available(iOS 27, *) {
+            return .past
+        }
+        // Apps built before the iOS 26 SDK get "19.0" as the system version from ProcessInfo.
+        // Once built with the iOS 26 SDK, the version then becomes "26.0".
+        if #available(iOS 19, *) {
+            return .current
+        }
+        return .future
+        #else
+        return nil
+        #endif
+    }
 }
 
 public struct tvOSVersion: PlatformVersion {
